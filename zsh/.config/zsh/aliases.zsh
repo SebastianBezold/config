@@ -18,6 +18,12 @@ alias lg="lazygit"
 alias vim="nvim"
 
 
+# Tool re-assigning
+
+alias cat="bat"
+alias ccat="cat"
+
+
 # config shortcuts
 
 alias zconfig="nvim $HOME/.zshrc"
