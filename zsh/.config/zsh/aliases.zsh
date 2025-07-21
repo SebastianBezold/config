@@ -22,6 +22,9 @@ alias vim="nvim"
 
 alias cat="bat"
 alias ccat="cat"
+alias cd="z"
+
+alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
 
 
 # config shortcuts
