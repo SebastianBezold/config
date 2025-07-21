@@ -17,6 +17,17 @@ return {
     -- add options here
   },
     config = function()
-        vim.keymap.set('n', '<C-n>', ':Neotree filesystem reveal left<CR>', {})
+        vim.keymap.set('n', '<C-f>', ':Neotree filesystem reveal left<CR>', {})
+
+        require("neo-tree").setup({
+            filesystem = {
+                filtered_items = {
+                    visible = false,
+                    never_show = {
+                        ".git"
+                    },
+                },
+            },
+        })
     end
 }
