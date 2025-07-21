@@ -1,0 +1,19 @@
+[user]
+	email = SebastianBezold@gmail.com
+	name = Sebastian Bezold
+	signingkey = ~/.ssh/id_ed25519.pub
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
+[init]
+	defaultBranch = main
+[core]
+	editor = nvim
+	hookspath = ~/.config/githooks
+	pager = delta
+[delta]
+	navigate = true
+	side-by-side = true
+[pull]
+	rebase = true
