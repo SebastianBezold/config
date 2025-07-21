@@ -7,9 +7,9 @@ return {
       config.setup({
         auto_install = false,
         ensure_installed = {
-	  "go",
-	  "python",
-	  "markdown",
+          "go",
+          "python",
+          "markdown",
           "javascript",
           "typescript",
           "bash",
@@ -19,7 +19,7 @@ return {
           "css",
         },
         highlight = { enable = true },
-        indent = { enable = false },
+        indent = { enable = true },
       })
     end
   }
