@@ -2,7 +2,10 @@
 
 alias gs="git status"
 alias gp="git push"
+alias gpf="git push -f"
+alias gc="git checkout"
 alias gcb="git checkout -b"
+alias gcm="git checkout main"
 
 
 # GNU aliases
