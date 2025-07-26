@@ -11,23 +11,24 @@ return {
     -- "folke/snacks.nvim",
   },
   lazy = false, -- neo-tree will lazily load itself
+  keys = {
+    { '\\', ':Neotree reveal<CR>', desc = 'NeoTree reveal', silent = true },
+  },
   ---@module "neo-tree"
   ---@type neotree.Config?
   opts = {
-    -- add options here
+    filesystem = {
+      window = {
+        mappings = {
+          ['\\'] = 'close_window',
+        }
+      },
+      filtered_items = {
+        visible = false,
+        never_show = {
+            ".git"
+        },
+      },
+    },
   },
-    config = function()
-        vim.keymap.set('n', '<C-f>', ':Neotree filesystem reveal left<CR>', {})
-
-        require("neo-tree").setup({
-            filesystem = {
-                filtered_items = {
-                    visible = false,
-                    never_show = {
-                        ".git"
-                    },
-                },
-            },
-        })
-    end
 }
